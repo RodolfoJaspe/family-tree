@@ -1,0 +1,30 @@
+.children-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  /* border-radius: 2vw; */
+}
+
+.parents-div {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.person {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  /* border-top: 1px solid black;
+  border-bottom: 1px solid black; */
+  background: radial-gradient(#ffc0a300, #662b0f78);
+  /* border-radius: 2vw; */
+}
+
+.person img:hover {
+  transform: scale(1);
+  border: 2px solid rgb(107, 0, 0);
+  border-radius: 5%;
+  cursor: initial;
+}
