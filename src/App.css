@@ -38,17 +38,19 @@ h1 {
   -webkit-text-fill-color: transparent;
 }
 
-.header a {
-  border-radius: 0.5vw;
-  padding: 1vw;
-  box-shadow: 4px 2px rgb(107, 0, 0);
-}
 a {
   font-size: 2rem;
   text-decoration: none;
   background: -webkit-linear-gradient(#7a0000, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  border-radius: 0.5vw;
+  padding: 1vw;
+  box-shadow: 4px 2px rgb(107, 0, 0);
+}
+
+a:hover {
+  text-shadow: 1px 1px cornsilk;
 }
 
 h4 {

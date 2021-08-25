@@ -8,7 +8,7 @@ function Home ({person}) {
     const history = useHistory()
 
     const clickHandler = ()=>{
-        history.push(`/person/${person.id}`)
+        history.push(`/biopage/${person.id}`)
     }
     return (
         <div className="home">
