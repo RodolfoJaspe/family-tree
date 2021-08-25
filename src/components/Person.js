@@ -1,6 +1,6 @@
 import { connect } from "react-redux"
 import React from "react"
-import { useHistory, useParams } from "react-router"
+import { useParams } from "react-router"
 import "./Person.css"
 import Child from "./Child"
 import Parent from "./Parent.js"
@@ -8,11 +8,12 @@ import Parent from "./Parent.js"
 
 const Person = ({tree}) => {
     const params = useParams()
-    const person = tree.find(per => per.id == params.id)
+    console.log(params)
+    const person = tree.find(per => per.id === params.id)
     console.log(person)
 
     return (
-        <div>
+        <div className="tree-div">
             <div>
                 <h3>Padres</h3>
                 <div className="parents-div">
@@ -22,7 +23,7 @@ const Person = ({tree}) => {
                 </div>
             </div>
             <div className="person">
-                <img src={person.image} />
+                <img src={person.image} alt="person"/>
                 <h2>{person.name}</h2>
             </div>
             <div className="children-div">

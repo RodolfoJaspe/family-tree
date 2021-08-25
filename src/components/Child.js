@@ -5,7 +5,7 @@ import "./Child.css"
 
 function Child ({childName, tree}){
 
-    const child = tree.find(person => person.name == childName)
+    const child = tree.find(person => person.name === childName)
     console.log(child)
     const history = useHistory()
     const clickHandler = () => {
@@ -16,10 +16,10 @@ function Child ({childName, tree}){
         <div className="child">
             <div className="child-img"
             onClick={clickHandler}>
-               <img src={child.image}/> 
+               <img src={child.image} alt="child"/> 
             </div>
             
-            <a onClick={clickHandler}>{childName}</a>
+            <h4 onClick={clickHandler}>{childName}</h4>
         </div>
     )
 }

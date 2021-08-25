@@ -7,15 +7,17 @@ function BioPage ({tree}) {
 
     const history = useHistory()
     const params = useParams()
-    const person = tree.find(someone => someone.id == params.id)
+    const person = tree.find(someone => someone.id === params.id)
     console.log(person)
     const clickHandler = ()=>{
-        // e.preventDefault()
         history.push(`/person/${person.id}`)
     }
     return (
         <div className="bio">
-            <img src={person.image}/>
+            <div onClick={clickHandler}>
+                <img src={person.image}alt="person"/> 
+            </div>
+            
             <h2>{person.name}</h2>
             <h3>{person.dob}</h3>
             <h3>{person.pob}</h3>
