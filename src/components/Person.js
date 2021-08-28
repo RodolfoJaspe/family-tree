@@ -4,6 +4,7 @@ import { useParams } from "react-router"
 import "./Person.css"
 import Child from "./Child"
 import Parent from "./Parent.js"
+import {Link} from "react-router-dom"
 
 
 const Person = ({tree}) => {
@@ -33,7 +34,8 @@ const Person = ({tree}) => {
                         <Child childName={child} key={child}/>
                     ))}
                 </div>  
-            </div>  
+            </div>
+            <Link to="/">Inicio</Link>  
         </div>
     )
 }

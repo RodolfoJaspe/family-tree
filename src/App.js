@@ -16,7 +16,6 @@ function App() {
             <header className="App-header">
                 <div className="header">
                     <h1>Familia Morales</h1>
-                    <Link to="/">Inicio</Link>
                 </div>
                 <Route exact path="/" component={Home}/>
                 <Route path="/person/:id" component={Person}/>

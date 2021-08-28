@@ -1,15 +1,15 @@
 .App {
   text-align: center;
   background-color: rgb(32, 16, 16);
-  font-family: cursive;
+  font-family: serif;
 }
 
 .App-header {
   background-image: linear-gradient(
       rgba(255, 249, 172, 0.3),
-      rgba(255, 190, 170, 0.3)
+      rgba(255, 208, 170, 0.3)
     ),
-    url("https://floridaimaginationstation.com/wp-content/uploads/2018/05/old-paper-texture-wallpaper-49224-50886-hd-wallpapers-1.jpg");
+    url("https://st.depositphotos.com/2071131/2133/i/950/depositphotos_21333645-stock-photo-canvas-background.jpg");
   background-size: contain;
   min-height: 100vh;
   display: flex;
@@ -27,45 +27,31 @@
   align-items: center;
   /* background: red; */
   width: 100%;
-  background: radial-gradient(#ffc0a300, #662b0f78);
+  background-image: radial-gradient(#fffaf34b, rgba(0, 0, 0, 0.246)),
+    url("https://www.adobe.com/express/create/photo-collage/media_1fa724edcc47f49cf0d498653be973c816795eff3.png?width=2000&format=webply&optimize=medium");
   padding-top: 5vh;
+  opacity: 0.9;
 }
 
 h1 {
-  font-size: 4rem;
-  background: -webkit-linear-gradient(#7a0000, black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-a {
-  font-size: 2rem;
-  text-decoration: none;
-  background: -webkit-linear-gradient(#7a0000, black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border-radius: 0.5vw;
-  padding: 1vw;
-  box-shadow: 4px 2px rgb(107, 0, 0);
-}
-
-a:hover {
-  text-shadow: 1px 1px cornsilk;
+  font-size: 5rem;
+  color: #490000;
+  padding: 3vw 10vw;
+  border-radius: 5vw;
+  text-shadow: -5px 5px 20px white;
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   text-decoration: none;
-  background: -webkit-linear-gradient(#7a0000, black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: #490000;
 }
 
 h4:hover {
   background: -webkit-linear-gradient(#7a0000, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow: 1px 1px cornsilk;
+  text-shadow: 1px 1px rgb(255, 245, 231);
   cursor: pointer;
 }
 
@@ -74,12 +60,11 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 5%;
-  filter: sepia(1);
   object-fit: cover;
 }
 
 img:hover {
-  border: 2px solid rgb(255, 237, 231);
+  border: 2px solid rgb(255, 245, 231);
   transform: scale(1.1);
   transition: 1s;
   border-radius: 10%;
@@ -88,32 +73,46 @@ img:hover {
 
 h3 {
   font-size: 2rem;
-  background: -webkit-linear-gradient(#7a0000, black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  margin: 1vw;
+  color: #490000;
+  background: radial-gradient(#fff0d998, rgba(255, 0, 0, 0));
+  padding: 1vw;
 }
 
 h2 {
-  font-size: 3rem;
-  background: -webkit-linear-gradient(#7a0000, black);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 0;
-  margin: 0;
+  font-size: 2.5rem;
+  color: #490000;
+  background: radial-gradient(#fff0d998, rgba(255, 0, 0, 0));
+  padding: 1vw;
+  margin: 3vw;
+}
+
+a {
+  color: cornsilk;
+  text-decoration: none;
+  font-size: 0.8rem;
+  background: linear-gradient(to bottom right, #7a0000, rgb(46, 0, 0));
+  border: none;
+  padding: 0.5vw 1.5vw;
+  border-radius: 0.5vw;
+  width: 30%;
+}
+
+a:hover {
+  background: linear-gradient(to bottom right, rgb(46, 0, 0), #7a0000);
 }
 
 button {
-  font-family: cursive;
-  color: cornsilk;
   font-size: 1rem;
-  background: linear-gradient(to bottom right, #7a0000, black);
-  border: none;
-  padding: 10px;
-  width: 10vw;
+  margin: 3vh;
+  padding: 0.4vw 2vw;
   border-radius: 0.5vw;
+  color: #490000;
+  background: linear-gradient(#ffcfa385, #662b0f78);
+  border: 2px solid #490000;
 }
 
 button:hover {
-  background: linear-gradient(to bottom right, black, #7a0000);
   cursor: pointer;
+  background: linear-gradient(#662b0f78, #ffcfa385);
 }

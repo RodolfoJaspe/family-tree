@@ -7,4 +7,17 @@
 
 .bio img {
   margin-bottom: 3vw;
+  width: 500px;
+  height: 500px;
+}
+
+.bio p {
+  color: #490000;
+  background: radial-gradient(#fff0d998, rgba(255, 0, 0, 0));
+}
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(#fff0d998, rgba(255, 0, 0, 0));
 }

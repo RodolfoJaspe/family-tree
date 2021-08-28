@@ -1,7 +1,7 @@
 import { useHistory, useParams } from "react-router";
 import { connect } from "react-redux";
 import "./BioPage.css"
-
+import {Link} from "react-router-dom"
 
 function BioPage ({tree}) {
 
@@ -21,8 +21,13 @@ function BioPage ({tree}) {
             <h2>{person.name}</h2>
             <h3>{person.dob}</h3>
             <h3>{person.pob}</h3>
-            <p>{person.bio}</p>
-            <button onClick={clickHandler}>Abrir</button>
+            <p><strong>{person.bio}</strong></p>
+            <h3>{person.generation}</h3>
+            <div className="buttons">
+                <button onClick={clickHandler}>Ver</button>
+                <Link to="/">Inicio</Link>
+            </div>
+            
         </div>   
     )
 }
