@@ -3,8 +3,7 @@ import Person from './components/Person';
 import Home from "./components/Home";
 import {
     BrowserRouter as Router,
-    Route,
-    Link
+    Route
   } from "react-router-dom"
 import BioPage from './components/BioPage';
 
