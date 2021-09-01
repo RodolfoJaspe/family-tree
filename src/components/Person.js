@@ -24,7 +24,10 @@ const Person = ({tree}) => {
                 </div>
             </div>
             <div className="person">
-                <img src={person.image} alt="person"/>
+                <div className="personframe">
+                  <img src={person.image} alt="person"/>  
+                </div>
+                
                 <h2>{person.name}</h2>
             </div>
             <div className="children-div">

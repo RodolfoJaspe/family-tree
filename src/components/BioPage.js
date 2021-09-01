@@ -14,7 +14,7 @@ function BioPage ({tree}) {
     }
     return (
         <div className="bio">
-            <div onClick={clickHandler}>
+            <div className = "bioimageframe" onClick={clickHandler}>
                 <img src={person.image}alt="person"/> 
             </div>
             

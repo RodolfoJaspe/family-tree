@@ -1,6 +1,7 @@
 .parent img {
   width: 150px;
   height: 150px;
+  margin-top: 35px;
 }
 
 .parent {
@@ -12,3 +13,22 @@
 .parent h4 {
   font-size: 1.5rem;
 }
+
+.parentframe {
+  background: url("../Assets/pngkey.com-baby-border-png-2957680.png");
+  background-size: contain;
+  background-position-y: center;
+  background-position-x: center;
+  width: 220px;
+  height: 220px;
+  box-shadow: -5px 5px 10px rgba(68, 31, 0, 0.819);
+}
+
+.parentframe:hover {
+  cursor: pointer;
+}
+
+/* .frame:hover {
+  transform: scale(1.1);
+  transition: 1s;
+} */

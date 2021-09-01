@@ -26,15 +26,23 @@
 }
 
 .person img:hover {
-  transform: scale(1);
-  border: 2px solid rgb(107, 0, 0);
-  border-radius: 5%;
   cursor: initial;
 }
 
 .person img {
   width: 300px;
   height: 300px;
+  margin-top: 68px;
+}
+
+.personframe {
+  background: url("../Assets/pngkey.com-baby-border-png-2957680.png");
+  background-size: contain;
+  background-position-y: center;
+  background-position-x: center;
+  width: 435px;
+  height: 435px;
+  box-shadow: -15px 15px 30px rgba(68, 31, 0, 0.819);
 }
 
 .tree-div {

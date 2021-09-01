@@ -14,7 +14,10 @@ function Parent ({parentName, tree}){
 
     return (
         <div className="parent">
-            <img src={parent.image} onClick={clickHandler} alt="parent"/>
+            <div className="parentframe">
+               <img src={parent.image} onClick={clickHandler} alt="parent"/> 
+            </div>
+            
             <h4 onClick={clickHandler}>{parentName}</h4>
 
         </div>         
